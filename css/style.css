@@ -1,0 +1,56 @@
+body {
+  padding: 20px 0;
+  position:absolute;
+
+}
+
+
+
+.container {
+  border: 3px solid yellow;
+  position: relative;
+  width: 200px;
+  height: 350px;
+  margin: 0 auto;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.canvas {
+  position: absolute;
+  top: 0;
+}
+
+.form {
+  padding: 20px;
+}
+.test{
+  color: red;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .img-container {
+    min-height: 150px;
+    background-image: url("header.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center top;
+    /*padding: 40px; (If don't want to set min-height or some image content is there) */
+  }
+      body{height: -webkit-fill-available; }
+
+@media only screen and (max-device-width: 480px) {
+        div#wrapper {
+            width: 400px;
+        }
+
+
+    }

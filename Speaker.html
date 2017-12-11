@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="css/small-device.css" />
+  <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 480px)" href="./css/large-device.css" />
+  <title>POC - Automatic Returns</title>
+</head>
+<body style="border:2px solid #000; background: #D3D3D3; overflow-y: hidden">
+
+<div class="mainCntainer">
+  <!-- <div class="frame" syle="text-align:auto">
+      <iframe src="http://www.o2.co.uk/thirdpartyfragments/header?resultsState=tpGroupChat&noICG=1&isHttps=1"
+      scrolling="no"
+      allowtransparency="false"
+      name="frame1" id="frame1"
+      onload=""
+      frameborder="0" marginwidth="0"
+        style="position:fixed; top:0px;
+        bottom:0px; right:0px; width: 95%;
+        border: none; margin:10px; padding:0px;
+        overflow: hidden; z-index:999999;
+        height: 20%">
+        </iframe>
+  </div>
+-->
+<div class="img-container"></div>
+
+<div class="container" >
+    <div class="heading" style="text-align:center">
+      <h3>Speaker Check</h3>
+    </div>
+    <div class="description" >
+      Play the sound, Listen carefully and then verify<br>
+    </div>
+    <div class="audioControls">
+      <audio controls style="width:250px;">
+        <source src="horse.ogg" type="audio/ogg">
+        <source src="audio/apple.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+    </div>
+    <div class="getInputFromUser">
+      <input id="codeInput" type="text" name="code" placeholder="what did you hear?">
+    </div>
+    <div>
+      <button onClick="submitForm()">Verify</button>
+    </div>
+    <div class ="note">
+      <p><strong>Note:</strong> This feature is not supported in Internet Explorer 8 and earlier versions.</p>
+    </div>
+    <div class="goback">
+      <a href="index.html">Back</a>
+    </div>
+</div>
+
+</div>
+
+<script  src="./js/index.js"></script>
+<script type="text/javascript">
+function submitForm() {
+    var userinput = document.getElementById("codeInput").value;
+    if(userinput == "aforapple") {
+	alert("Speaker Check Successful..!");
+    }else alert("Wrong secret code, Please try again..!");
+  }
+</script>
+
+</body>
+</html>

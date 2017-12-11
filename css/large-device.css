@@ -1,0 +1,27 @@
+@media only screen and (min-device-width: 480px) {
+.container{
+
+text-align:center;
+
+}
+#header-img {
+  width: 100%;
+  height: auto;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .img-container {
+    min-height: 150px;
+    background-image: url("header.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center top;
+    /*padding: 40px; (If don't want to set min-height or some image content is there) */
+  }
+      body{height: -webkit-fill-available; }
+
+
+}
